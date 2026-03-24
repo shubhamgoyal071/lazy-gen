@@ -1,0 +1,79 @@
+{
+  "theme": "Strict Black & White Minimalist (Apple-like + GenZ Attitude)",
+  "typography": {
+    "headings": {
+      "fontFamily": "Outfit, sans-serif",
+      "usage": "Massive, expressive sizing (text-6xl to text-8xl). Use tracking-tighter for impact. DO NOT use generic sans like Inter for headings."
+    },
+    "body": {
+      "fontFamily": "JetBrains Mono, monospace",
+      "usage": "Sarcastic, deadpan tech feel. Use for descriptions, small text, and form inputs."
+    }
+  },
+  "colors": {
+    "background": "#FAFAFA",
+    "foreground": "#0A0A0A",
+    "inverted_background": "#0A0A0A",
+    "inverted_foreground": "#FAFAFA",
+    "muted": "#888888",
+    "border": "#222222",
+    "rules": "Strict grayscale. Absolutely no bright colors or generic gradients."
+  },
+  "visual_enhancers": {
+    "textures": "Subtle SVG grain/noise overlay (opacity-5) to kill digital flatness.",
+    "borders": "Crisp 1px solid borders for defined sections.",
+    "shadows": "No soft drop shadows. Flat design or stark brutalist 4px solid black offset shadows."
+  },
+  "components": {
+    "buttons": "Pill-shaped (rounded-full). Default: bg-black text-white. Hover: smooth invert to bg-white text-black with black border.",
+    "cards": "Bento-style grids. Sharp edges or slight rounding (rounded-2xl). Generous padding (p-8 to p-12).",
+    "inputs": "Brutalist minimalism. Transparent background, single 1px bottom border, huge text. No surrounding box."
+  },
+  "layouts": {
+    "hero": "Asymmetrical. Massive left-aligned headline, right-aligned floating panda logo.",
+    "story": "Monospace typewriter effect or large sarcastic static text.",
+    "how_it_works": "Asymmetrical 3-step grid. Lots of negative space.",
+    "pain_points": "High density 2x2 grid. Pure typography, heavy contrast.",
+    "waitlist": "Full screen inverted section (black bg, white text). Massive input fields.",
+    "footer": "Ultra minimal. No social links. Just a copyright and a sarcastic sign-off."
+  },
+  "motion": {
+    "panda_logo": "Combined breathing (scale: [1, 1.03, 1]) and bobbing (y: [-10, 10, -10]). CSS/Framer Motion.",
+    "hover_states": "Buttons and cards invert colors. transition-colors duration-300 ease-in-out.",
+    "entrance": "Staggered fade-up (y: 20px -> 0px) for text blocks and cards."
+  },
+  "accessibility": {
+    "contrast": "Strict high contrast. All text must be clearly readable against background.",
+    "focus": "High contrast outline on focus (ring-2 ring-black).",
+    "testing": "All interactive elements MUST include data-testid attribute."
+  },
+  "media": {
+    "image_urls": [
+      {
+        "url": "https://customer-assets.emergentagent.com/job_22990b85-c24e-49bf-a598-fc26b361df44/artifacts/jkf5exp1_WhatsApp%20Image%202026-03-24%20at%209.09.53%20PM.jpeg",
+        "category": "Hero Logo & Mascot",
+        "description": "LazyGen sleepy panda logo. Focal point of Hero and Story sections."
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Build the frontend in React (.jsx/.js files) and Tailwind CSS.",
+    "Use Framer Motion for the Panda bobbing/breathing animation and scroll reveals.",
+    "Ensure Waitlist form posts data to the FastAPI/MongoDB backend correctly.",
+    "Implement a subtle grain/noise overlay across the entire app.",
+    "Stick strictly to the black and white theme. Use 'Outfit' for headings and 'JetBrains Mono' for body if possible, or fallback to system sans/mono smartly.",
+    "Ensure all data-testid attributes are present (e.g., data-testid='waitlist-email-input')."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic outputs. Avoid this: make creative, distinctive frontends.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "You MUST NOT apply universal transition. Always add transitions for specific interactive elements.",
+    "You MUST NOT center align the app container. Avoid generic centered layouts.",
+    "Always use modern button styles like pill-shaped with interaction animations.",
+    "NEVER use AI assistant Emoji characters. Use lucide-react or @phosphor-icons/react.",
+    "Every interaction needs micro-animations - hover states, transitions, etc.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Use sonner for toast notifications."
+  ]
+}
