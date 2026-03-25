@@ -83,66 +83,39 @@ def _send_confirmation_email(name: str, email: str) -> None:
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>You're on the LazyGen Waitlist 🐼</title>
 </head>
-<body style="margin:0;padding:0;background:#FAFAFA;font-family:'Segoe UI',Helvetica,Arial,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" style="padding:40px 0;">
-    <tr>
-      <td align="center">
-        <table width="580" cellpadding="0" cellspacing="0" style="background:#fff;border-radius:16px;overflow:hidden;border:1px solid #E5E5E5;">
+<body style="margin:0;padding:0;background:#FFFFFF;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <div style="max-width:600px;margin:0 auto;padding:40px 20px;color:#0A0A0A;">
+    <p style="font-size:24px;margin-bottom:24px;">🐼</p>
+    <h1 style="font-size:24px;font-weight:700;margin:0 0 16px;letter-spacing:-0.5px;">Hey {name}, you're on the list!</h1>
+    
+    <p style="font-size:16px;line-height:1.6;margin:0 0 24px;">
+      Thanks for joining the <strong>LazyGen waitlist</strong>. You've successfully locked in your spot for early access.
+    </p>
 
-          <!-- Header -->
-          <tr>
-            <td style="background:#0A0A0A;padding:36px 40px;text-align:center;">
-              <p style="margin:0;font-size:32px;">🐼</p>
-              <h1 style="margin:12px 0 0;color:#FAFAFA;font-size:28px;font-weight:900;letter-spacing:-1px;">LazyBot</h1>
-              <p style="margin:6px 0 0;color:#888;font-size:12px;letter-spacing:3px;text-transform:uppercase;font-family:'Courier New',monospace;">apply smarter. not harder.</p>
-            </td>
-          </tr>
+    <div style="border-left:4px solid #0A0A0A;padding-left:20px;margin:24px 0;">
+      <p style="font-size:14px;color:#666;margin:0 0 8px;text-transform:uppercase;letter-spacing:1px;">First 100 users get special perks</p>
+      <p style="font-size:16px;margin:0;line-height:1.6;">
+        We'll notify you as soon as we open the doors. LazyBot is getting ready to handle your job applications so you don't have to.
+      </p>
+    </div>
 
-          <!-- Body -->
-          <tr>
-            <td style="padding:40px;">
-              <p style="margin:0 0 8px;color:#0A0A0A;font-size:22px;font-weight:800;">hey {name} 👋</p>
-              <p style="margin:0 0 24px;color:#444;font-size:15px;line-height:1.7;">
-                you're officially on the <strong>LazyGen waitlist</strong>.<br/>
-                no cap — you just made the smartest lazy decision of your life.
-              </p>
+    <p style="font-size:15px;font-weight:600;margin:32px 0 12px;">What to expect from LazyBot:</p>
+    <ul style="font-size:15px;line-height:1.8;margin:0;padding-left:20px;color:#444;">
+      <li>Automated resume-to-job matching</li>
+      <li>One-click applications that actually work</li>
+      <li>Saving up to 200+ hours of manual hunting every month</li>
+    </ul>
 
-              <div style="background:#0A0A0A;border-radius:12px;padding:24px;margin:24px 0;text-align:center;">
-                <p style="margin:0 0 6px;color:#888;font-size:11px;font-family:'Courier New',monospace;text-transform:uppercase;letter-spacing:2px;">your spot is locked ✅</p>
-                <p style="margin:0;color:#FAFAFA;font-size:15px;line-height:1.6;">
-                  We'll hit you up the moment early access opens.<br/>
-                  First <strong>100 users</strong> get special perks 
-                </p>
-              </div>
-
-              <p style="margin:24px 0 8px;color:#0A0A0A;font-size:14px;font-weight:700;">what lazybot does for you:</p>
-              <ul style="margin:0;padding-left:20px;color:#555;font-size:14px;line-height:2;">
-                <li> AI reads your resume like a recruiter</li>
-                <li>⚡ matches you with jobs that actually fit</li>
-                <li> applies on your behalf — literally</li>
-                <li> saves you 200+ hours every month</li>
-              </ul>
-
-              <p style="margin:32px 0 0;color:#888;font-size:13px;font-family:'Courier New',monospace;">
-                stay lazy,<br/>
-                <strong style="color:#0A0A0A;">team lazybot 🐼</strong>
-              </p>
-            </td>
-          </tr>
-
-          <!-- Footer -->
-          <tr>
-            <td style="background:#F5F5F5;padding:20px 40px;text-align:center;border-top:1px solid #E5E5E5;">
-              <p style="margin:0;color:#AAA;font-size:11px;font-family:'Courier New',monospace;">
-                questions? hit us at <a href="mailto:support@lazygen.site" style="color:#666;text-decoration:none;">support@lazygen.site</a>
-              </p>
-            </td>
-          </tr>
-
-        </table>
-      </td>
-    </tr>
-  </table>
+    <p style="font-size:14px;color:#888;margin:40px 0 0;font-style:italic;">
+      Stay lazy,<br/>
+      <strong>Team LazyBot 🐼</strong>
+    </p>
+    
+    <hr style="border:none;border-top:1px solid #EEE;margin:40px 0 20px;" />
+    <p style="font-size:12px;color:#AAA;text-align:center;">
+      Questions? Reply to this email or hit us at support@lazygen.site
+    </p>
+  </div>
 </body>
 </html>
 """
