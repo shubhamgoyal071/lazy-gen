@@ -36,13 +36,13 @@ const HeroSection = () => {
 
   return (
     <section data-testid="hero-section" className="min-h-screen flex flex-col lg:flex-row items-center justify-between px-6 md:px-12 lg:px-24 py-20 lg:py-0">
-      <motion.div 
+      <motion.div
         className="lg:w-1/2 text-left"
         initial="hidden"
         animate="visible"
         variants={staggerContainer}
       >
-        <motion.div 
+        <motion.div
           variants={fadeInUp}
           className="inline-block px-4 py-2 bg-[#0A0A0A] text-[#FAFAFA] rounded-full text-xs tracking-widest uppercase mb-8"
           style={{ fontFamily: "'JetBrains Mono', monospace" }}
@@ -50,8 +50,8 @@ const HeroSection = () => {
           <Sparkles className="w-3 h-3 inline mr-2" />
           something big is cooking
         </motion.div>
-        
-        <motion.h1 
+
+        <motion.h1
           variants={fadeInUp}
           className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[0.9] mb-8"
           style={{ fontFamily: "'Outfit', sans-serif" }}
@@ -60,26 +60,26 @@ const HeroSection = () => {
           <br />
           <span className="text-[#888]">not harder.</span>
         </motion.h1>
-        
-        <motion.p 
+
+        <motion.p
           variants={fadeInUp}
           className="text-base md:text-lg text-[#666] max-w-md mb-8"
           style={{ fontFamily: "'JetBrains Mono', monospace" }}
         >
-          AI scans your resume. finds perfect matches. applies on your behalf. zero effort from you.
+          ai scans your resume. finds perfect matches. applies on your behalf. zero effort from you.
         </motion.p>
 
-        <motion.div 
+        <motion.div
           variants={fadeInUp}
           className="flex flex-wrap gap-6 mb-10 text-xs text-[#888]"
           style={{ fontFamily: "'JetBrains Mono', monospace" }}
         >
           <span className="flex items-center gap-2"><Clock className="w-3 h-3" /> 200+ hrs saved</span>
           <span className="flex items-center gap-2"><Zap className="w-3 h-3" /> 50 apply/day</span>
-          <span className="flex items-center gap-2"><Bot className="w-3 h-3" /> fully auto</span>
+          <span className="flex items-center gap-2"><Bot className="w-3 h-3" /> fully automatic</span>
         </motion.div>
-        
-        <motion.button 
+
+        <motion.button
           variants={fadeInUp}
           data-testid="hero-cta-btn"
           onClick={scrollToWaitlist}
@@ -89,16 +89,16 @@ const HeroSection = () => {
           join waitlist <ArrowRight className="w-4 h-4" />
         </motion.button>
       </motion.div>
-      
-      <motion.div 
+
+      <motion.div
         className="lg:w-1/2 flex justify-center lg:justify-end mt-16 lg:mt-0"
         variants={pandaFloat}
         animate="animate"
       >
-        <img 
+        <img
           data-testid="hero-panda-logo"
-          src={PANDA_LOGO} 
-          alt="LazyBot Panda" 
+          src={PANDA_LOGO}
+          alt="LazyBot Panda"
           className="w-64 md:w-80 lg:w-[420px] object-contain"
         />
       </motion.div>
@@ -110,14 +110,14 @@ const HeroSection = () => {
 const StruggleSection = () => {
   return (
     <section data-testid="struggle-section" className="py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-[#0A0A0A] text-[#FAFAFA]">
-      <motion.div 
+      <motion.div
         className="max-w-4xl"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={staggerContainer}
       >
-        <motion.h2 
+        <motion.h2
           variants={fadeInUp}
           className="text-3xl md:text-5xl lg:text-6xl font-black mb-12 leading-tight"
           style={{ fontFamily: "'Outfit', sans-serif" }}
@@ -126,15 +126,15 @@ const StruggleSection = () => {
           <br />
           <span className="text-[#666]">unpaid internship energy.</span>
         </motion.h2>
-        
-        <motion.div 
+
+        <motion.div
           variants={fadeInUp}
           className="grid grid-cols-2 md:grid-cols-4 gap-4"
         >
           {[
-            { num: "6-12", label: "hrs wasted per 50 apps" },
+            { num: "6-12", label: "hrs wasted per 50 applications" },
             { num: "200+", label: "hrs lost monthly" },
-            { num: "80%", label: "apps ghosted" },
+            { num: "80%", label: "applications ghosted" },
             { num: "∞", label: "times same info typed" }
           ].map((stat, i) => (
             <div key={i} className="text-center p-4" data-testid={`stat-${i + 1}`}>
@@ -159,7 +159,7 @@ const SolutionSection = () => {
         variants={staggerContainer}
         className="max-w-5xl"
       >
-        <motion.h2 
+        <motion.h2
           variants={fadeInUp}
           className="text-3xl md:text-5xl lg:text-6xl font-black mb-16 leading-tight"
           style={{ fontFamily: "'Outfit', sans-serif" }}
@@ -171,13 +171,13 @@ const SolutionSection = () => {
           {[
             {
               icon: Brain,
-              title: "AI reads your resume like a recruiter",
+              title: "ai reads your resume like a recruiter",
               desc: "spots your skills. knows your worth. no cap."
             },
             {
               icon: Zap,
               title: "matches you with jobs that actually fit",
-              desc: "analyzes JDs. filters the noise. only shows you real ones."
+              desc: "analyzes jds. filters the noise. only shows you real ones."
             },
             {
               icon: Bot,
@@ -185,7 +185,7 @@ const SolutionSection = () => {
               desc: "fills forms. uploads docs. hits submit. you do nothing."
             }
           ].map((item, i) => (
-            <motion.div 
+            <motion.div
               key={i}
               variants={fadeInUp}
               className="flex items-start gap-6 p-6 border border-[#E5E5E5] rounded-2xl hover:border-[#0A0A0A] transition-colors duration-300"
@@ -221,7 +221,7 @@ const TimeSavedSection = () => {
         variants={staggerContainer}
         className="max-w-4xl"
       >
-        <motion.h2 
+        <motion.h2
           variants={fadeInUp}
           className="text-3xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight"
           style={{ fontFamily: "'Outfit', sans-serif" }}
@@ -242,7 +242,7 @@ const TimeSavedSection = () => {
           </div>
         </motion.div>
 
-        <motion.p 
+        <motion.p
           variants={fadeInUp}
           className="text-base text-[#888] mt-8"
           style={{ fontFamily: "'JetBrains Mono', monospace" }}
@@ -295,7 +295,7 @@ const WaitlistSection = () => {
         variants={staggerContainer}
         className="max-w-xl mx-auto text-center"
       >
-        <motion.div 
+        <motion.div
           variants={fadeInUp}
           className="inline-flex items-center gap-2 px-4 py-2 border border-[#333] rounded-full text-xs mb-8"
           style={{ fontFamily: "'JetBrains Mono', monospace" }}
@@ -304,7 +304,7 @@ const WaitlistSection = () => {
           first 100 users get special perks
         </motion.div>
 
-        <motion.h2 
+        <motion.h2
           variants={fadeInUp}
           className="text-3xl md:text-5xl lg:text-6xl font-black mb-4 leading-tight"
           style={{ fontFamily: "'Outfit', sans-serif" }}
@@ -316,7 +316,7 @@ const WaitlistSection = () => {
           <span className="text-[#888]">be hired.</span>
         </motion.h2>
 
-        <motion.p 
+        <motion.p
           variants={fadeInUp}
           className="text-sm text-[#888] mb-10"
           style={{ fontFamily: "'JetBrains Mono', monospace" }}
@@ -353,7 +353,7 @@ const WaitlistSection = () => {
               className="input-inverted"
               disabled={loading}
             />
-            <button 
+            <button
               data-testid="waitlist-submit-btn"
               type="submit"
               disabled={loading}
@@ -390,7 +390,7 @@ const ContactSection = () => {
         variants={staggerContainer}
         className="max-w-4xl mx-auto text-center"
       >
-        <motion.h3 
+        <motion.h3
           variants={fadeInUp}
           className="text-2xl md:text-3xl font-black mb-8"
           style={{ fontFamily: "'Outfit', sans-serif" }}
@@ -399,8 +399,8 @@ const ContactSection = () => {
         </motion.h3>
 
         <motion.div variants={fadeInUp} className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
-          <a 
-            href="mailto:support@lazygen.site" 
+          <a
+            href="mailto:support@lazygen.site"
             className="text-sm text-[#666] hover:text-[#0A0A0A] transition-colors"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
             data-testid="contact-email"
@@ -408,16 +408,16 @@ const ContactSection = () => {
             support@lazygen.site
           </a>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
-            <a 
-              href="tel:+919718642745" 
+            <a
+              href="tel:+919718642745"
               className="text-sm text-[#666] hover:text-[#0A0A0A] transition-colors"
               style={{ fontFamily: "'JetBrains Mono', monospace" }}
               data-testid="contact-phone-1"
             >
               +91 97186 42745
             </a>
-            <a 
-              href="tel:+916377406473" 
+            <a
+              href="tel:+916377406473"
               className="text-sm text-[#666] hover:text-[#0A0A0A] transition-colors"
               style={{ fontFamily: "'JetBrains Mono', monospace" }}
               data-testid="contact-phone-2"
@@ -452,8 +452,8 @@ function App() {
   return (
     <div className="App relative">
       <div className="noise-overlay" />
-      <Toaster 
-        position="bottom-right" 
+      <Toaster
+        position="bottom-right"
         toastOptions={{
           style: {
             background: '#0A0A0A',
